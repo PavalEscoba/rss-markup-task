@@ -1,0 +1,54 @@
+.page-header{
+  background-color: #000;
+}
+.page-header__outer{
+  max-width: 1600px;
+  height: 1065px;
+  margin: 0 auto;
+  background-image: url('../images/backgrounds/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: -5px -24px;
+  background-size: 100% 100%;
+  color: #fff;
+  @include tablet{
+    background-size: cover;
+  }
+}
+
+.page-header__inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-header__top{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2e2f31;
+}
+.page-header__logo{
+  margin: 32px 0px 28px 4px;
+  width: 133px;
+  height: 29px;
+}
+
+a.page-header__logo-link{
+  display: block;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+img.page-header__logo-pic{
+  width: 100%;
+}
+.nav-list{
+  display:flex;
+}
+li.nav-list__item{
+  display: flex;
+  list-style-type: none;  
+}
+a.nav-list__link{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
