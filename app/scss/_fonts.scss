@@ -4,10 +4,43 @@
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Medium';
   src: url('./../fonts/lato-medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./../fonts/myriadpro-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Semibold';
+  src: url('lato-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('lato-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url('lato-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('montserratlternates-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

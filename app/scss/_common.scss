@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
 html{
   font-size: 10px;
 }
-ul, ol{
+ul, ol, p{
   padding: 0;
   margin: 0;
 }

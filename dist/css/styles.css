@@ -23,6 +23,9 @@ body {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -41,6 +44,8 @@ body {
 /**
  * Remove the gray background on active links in IE 10.
  */
+a {
+  background-color: transparent; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -70,6 +75,8 @@ body {
 /**
  * Remove the border on images inside links in IE 10.
  */
+img {
+  border-style: none; }
 
 /* Forms
    ========================================================================== */
@@ -167,10 +174,139 @@ body {
  * Add the correct display in IE 10.
  */
 
+@font-face {
+  font-family: 'Lato';
+  src: url("./../fonts/lato-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("./../fonts/lato-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("./../fonts/myriadpro-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+html {
+  font-size: 10px; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
 .page-header {
+  background-color: #000; }
+
+.page-header__outer {
+  max-width: 1600px;
+  min-height: 1065px;
+  margin: 0 auto;
+  background-image: url("../images/backgrounds/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -5px -24px;
+  background-size: 100% 100%;
+  color: #fff; }
+  @media screen and (max-width: 949px) {
+    .page-header__outer {
+      background-size: cover; } }
+
+.page-header__inner {
   max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.page-header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2e2f31; }
+
+.page-header__logo {
+  margin: 32px 0px 28px 4px;
+  width: 133px;
+  height: 29px; }
+
+a.page-header__logo-link {
+  display: block; }
+  a.page-header__logo-link:hover {
+    opacity: 0.5; }
+
+img.page-header__logo-pic {
+  width: 100%; }
+
+ul.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+li.nav-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none; }
+
+a.nav-list__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem; }
+
+.greetings__head {
+  font-size: 7.2rem;
+  text-align: center;
+  font-family: "Myriad Pro", Arial, sans-serif; }
+
+.greetings__moto {
+  font-family: Georgia, serif;
+  font-size: 3.2rem; }
+
+.page-header__auth {
+  margin-top: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.page-header__auth-login, .page-header__auth-register {
+  width: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: bold; }
+
+.page-header__auth-login {
+  background-color: #21424a; }
+
+.page-header__auth-register {
+  background-color: #2fac6c; }
+
+.page-main {
+  height: 2000px;
+  width: 100%;
+  background-color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
