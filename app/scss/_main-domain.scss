@@ -1,0 +1,102 @@
+.domain__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+  margin-bottom: 4rem;
+}
+.domain__label {
+  margin: 5px 0 7px;
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  color: #cbcbcb;
+  border-right: 1px solid $border-color;
+}
+.domain__name-input {
+  width: 100%;
+  align-self: stretch;
+  padding: 8px 15px;
+  border: none;
+  color: #868686;
+  font-size: 1.5rem;
+  &:focus {
+    background-color: #eee;
+    outline: none;
+  }
+}
+.domain__select {
+  font-size: 1.6rem;
+  color: #cbcbcb;
+  margin: 6px 0;
+  padding: 6px 35px 8px 14px;
+  border: none;
+  border-left: 1px solid $border-color;
+  outline: none;
+  appearance: none;
+  background: url('./../images/misc/angle_down.svg') no-repeat #fff;
+  background-size: 10px;
+  background-position: 60px 13px;
+}
+.domain__table-container{
+  margin-bottom: 9rem;
+}
+.domain-table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.domain-table__row--top-break::after,
+.domain-table__row--bottom-break::after { 
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    height: 1.63rem;
+    background-color: white;
+}
+.domain-table__row--top-break::after{
+  top: 1px;
+}
+.domain-table__row--bottom-break::after { 
+  bottom: 1px;
+}
+.domain-table__cell {
+  width: 25.1%;
+  border: 1px solid $border-color;
+  padding: 41px 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #cbcbcb;
+}
+.domain-table__cell--break-start,
+.domain-table__cell--break-end {
+  position: relative;
+  &:after{
+    position: absolute;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 3rem;
+    background-color: #fff;
+  }
+}
+.domain-table__cell--break-start::after{
+  left: 0;
+}
+.domain-table__cell--break-end::after{
+  right: 0;
+}
+.domain-table__cell--break-middle{
+  position: relative;
+  &::before {
+    position: absolute;
+    display: block;
+    content:"";
+    height: 1.1rem;
+    width: 1.1rem;
+    top: -0.6rem;
+    left: -0.6rem;
+    background-color: #fff;
+  }
+}

@@ -1,46 +1,68 @@
 @font-face {
-  font-family: 'Lato';
-  src: url('./../fonts/lato-bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Lato Thin';
+  src: url('./../fonts/lato-thin.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('./../fonts/lato-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('./../fonts/lato-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Lato Medium';
   src: url('./../fonts/lato-medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url('./../fonts/myriadpro-bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+ 
 @font-face {
   font-family: 'Lato Semibold';
-  src: url('lato-semibold.woff') format('woff');
+  src: url('./../fonts/lato-semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato Regular';
-  src: url('lato-regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Lato Bold';
+  src: url('./../fonts/lato-bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Lato Heavy';
+  src: url('./../fonts/lato-heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+} 
 
 @font-face {
   font-family: 'Lato Black';
-  src: url('lato-black.woff') format('woff');
+  src: url('./../fonts/lato-black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('montserratlternates-regular.woff') format('woff');
+  src: url('./../fonts/montserrat-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./../fonts/myriadpro-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

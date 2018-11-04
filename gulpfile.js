@@ -18,7 +18,6 @@ gulp.task('sass', function () {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(uncss({html: ['app/index.html']}))
     .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8',], {cascade: true }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('app/css'))
@@ -55,11 +54,11 @@ gulp.task('img', function(){
 gulp.task('watch',['browser-sync', 'sass'], function() {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/scripts/**/*.js', browserSync.reload);
 });
 
 gulp.task('build',['clean', 'sass', 'img'], function(){
-  var buildCss = gulp.src('app/css/styles.css')
+  var buildCss = gulp.src('app/css/*.css')
                 .pipe(gulp.dest('dist/css'));
   var buildFonts = gulp.src('app/fonts/**/*')
                   .pipe(gulp.dest('dist/fonts'));
@@ -67,8 +66,8 @@ gulp.task('build',['clean', 'sass', 'img'], function(){
                    .pipe(gulp.dest('dist/images'));
   var buildHtml = gulp.src('app/*.html')
                 .pipe(gulp.dest('dist'));
-  var buildJs = gulp.src('app/js/**/*')
-              .pipe(gulp.dest('dist/js'))
+  var buildJs = gulp.src('app/scripts/**/*')
+              .pipe(gulp.dest('dist/scripts'))
 });
 
 gulp.task('default', ['watch']);

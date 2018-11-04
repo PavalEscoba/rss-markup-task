@@ -5,20 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>GhostHost. Hosting for everyone!</title>
   <style>
-    HTML {
+    html {
       background-repeat: no-repeat;
       background-position:  50% 0; 
       background-image: url( "./images/gh-page.jpg" );
     }
     
   </style>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <link href="./temp/pixel-glass/styles.css" rel="stylesheet">
-  <script src="./temp/pixel-glass/script.js"></script>
+ 
 </head>
 
 <body>
@@ -31,17 +28,17 @@
         <div class="page-header__top">
           <div class="page-header__logo">
             <a href="index.html" title="GhostHost main page" class="page-header__logo-link"><img class="page-header__logo-pic"
-                src="./images/logos/header-logo.png" alt="GhostHost logo"></a>
+                src="./images/logos/header-logo.png" alt="GhostHost logo" height="29" width="133"></a>
           </div>
           <nav class="page-header__nav">
             <ul class="nav-list">
-              <li class="nav-list__item nav-list__item--active"><a href="#" title="Home" class=nav-list__link>Home</a>
+              <li class="nav-list__item nav-list__item--active"><a href="#" title="Home" class="nav-list__link">Home</a>
               </li>
-              <li class="nav-list__item"><a href="#" title="Domain" class=nav-list__link>Domain</a></li>
-              <li class="nav-list__item"><a href="#" title="Hosting" class=nav-list__link>Hosting</a></li>
-              <li class="nav-list__item"><a href="#" title="Clients" class=nav-list__link>Clients</a></li>
-              <li class="nav-list__item"><a href="#" title="Blog" class=nav-list__link>Blog</a></li>
-              <li class="nav-list__item"><a href="#" title="Support" class=nav-list__link>Support</a></li>
+              <li class="nav-list__item"><a href="#" title="Domain" class="nav-list__link">Domain</a></li>
+              <li class="nav-list__item"><a href="#" title="Hosting" class="nav-list__link">Hosting</a></li>
+              <li class="nav-list__item"><a href="#" title="Clients" class="nav-list__link">Clients</a></li>
+              <li class="nav-list__item"><a href="#" title="Blog" class="nav-list__link">Blog</a></li>
+              <li class="nav-list__item"><a href="#" title="Support" class="nav-list__link">Support</a></li>
             </ul>
           </nav>
         </div><!-- end of page-header__top -->
@@ -67,40 +64,419 @@
         <p class="domain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac
           nulla interdum, id molestier.</p>
       </header>
-      <form class="domain__form" action="#" method="#">
-        <label class="domain__label" for="chosen-domain-name">www.</label><input class="domain__name-input" type="text" name="domain-name" id="chosen-domain-name" placeholder="What do you want?">
-        
-        <select class="domain__select" name="domain-select"  id="chosen-domain">
+      <form class="domain__form">
+        <label class="domain__label" for="chosen-domain-name">www.</label><input class="domain__name-input" type="text"
+          name="domain-name" id="chosen-domain-name" placeholder="What do you want?">
+
+        <select class="domain__select" name="domain-select" id="chosen-domain">
           <option class="domain__option" value="com" selected>.com</option>
           <option class="domain__option" value="net">.net</option>
           <option class="domain__option" value="org">.org</option>
         </select>
       </form>
-      <div class="table-container">
+      <div class="table-container domain__table-container">
         <table class="domain-table">
           <tbody>
-            <tr class="domain-table__row">
-              <td class="domain-table__cell">.COM</td>
+            <tr class="domain-table__row domain-table__row--top-break">
+              <td class="domain-table__cell domain-table__cell--break-start">.COM</td>
               <td class="domain-table__cell">1 Year</td>
               <td class="domain-table__cell">$9.00 USD</td>
-              <td class="domain-table__cell">Transfer Price No</td>
+              <td class="domain-table__cell domain-table__cell--break-end">Transfer Price No</td>
             </tr>
-            <tr class="domain-table__row">
+            <tr class="domain-table__row domain-table__row--bottom-break">
               <td class="domain-table__cell">.NET</td>
-              <td class="domain-table__cell">1 Year</td>
-              <td class="domain-table__cell">$9.00 USD</td>
-              <td class="domain-table__cell">Transfer Price No</td>
+              <td class="domain-table__cell domain-table__cell--break-middle">1 Year</td>
+              <td class="domain-table__cell domain-table__cell--break-middle">$9.00 USD</td>
+              <td class="domain-table__cell domain-table__cell--break-middle">Transfer Price No</td>
             </tr>
           </tbody>
         </table>
       </div>
-
     </section><!-- end of page-main__inner -->
+    <section class="packages">
+      <ul class=packages__list>
+        <li class="packages_item packages_item--basic">
+          <div class="packages__icon-wrapper">
+            <svg class="packages__stroke-basic" width="56" height="56" viewBox="0 0 56 56">
+              <circle cx="50%" cy="50%" r="25" fill="none" stroke-dasharray="157.08" stroke-dashoffset="-120" />
+            </svg>
+            <i class="packages__icon-basic fa fa-anchor"></i>
+          </div>
+          <div class="table-container packages__table-container">
+            <table class="packages__table packages__table--basic">
+              <caption class="packages__table-caption">
+                Basic package
+              </caption>
+              <tbody>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Disk Space (GB)</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">50</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Subdomains</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">50</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Transfer (GB) </td>
+                  <td class="packages__table-cell packages__table-cell--quantity">50</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Data bases</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">1</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Dashboards</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">1</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Control Panel & FTP</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Free Support</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="packages__price packages__price--basic">
+            <sup class="packages__price-currency">$</sup><span class="packages__price-value">15</span><sub class="packages__price-periodicity">/Mo</sub>
+          </p>
+          <button class="packages__btn">Select Plan</button>
+        </li>
+        <li class="packages_item packages_item--normal">
+          <div class="packages__icon-wrapper">
+            <svg width="56" height="56" viewBox="0 0 56 56" class="packages__stroke-normal">
+              <circle cx="50%" cy="50%" r="25" fill="none" stroke-dasharray="157.08" stroke-dashoffset="79" />
+            </svg>
+            <i class="packages__icon-normal fa fa-star-half-empty"></i>
+          </div>
+          <div class="table-container packages__table-container">
+            <table class="packages__table packages__table--normal">
+              <caption class="packages__table-caption">
+                Normal package
+              </caption>
+              <tbody>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Disk Space (GB)</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">100</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Subdomains</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">100</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Transfer (GB) </td>
+                  <td class="packages__table-cell packages__table-cell--quantity">100</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Data bases</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">2</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Dashboards</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">2</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Control Panel & FTP</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Free Support</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="packages__price packages__price--normal">
+            <sup class="packages__price-currency">$</sup><span class="packages__price-value">30</span><sub class="packages__price-periodicity">/Mo</sub>
+          </p>
+          <button class="packages__btn">Select Plan</button>
+        </li>
+        <li class="packages_item packages_item--big">
+          <div class="packages__icon-wrapper">
+            <svg class="packages__stroke-big" width="56" height="56" viewBox="0 0 56 56">
+              <circle cx="50%" cy="50%" r="25" fill="none" stroke-dasharray="157.08" stroke-dashoffset="43" />
+            </svg>
+            <i class="packages__icon-big fa fa-star"></i>
+          </div>
+          <div class="table-container packages__table-container">
+            <table class="packages__table packages__table--big">
+              <caption class="packages__table-caption">
+                Big package
+              </caption>
+              <tbody>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Disk Space (GB)</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">150</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Subdomains</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">150</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Transfer (GB) </td>
+                  <td class="packages__table-cell packages__table-cell--quantity">150</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Data bases</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">4</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Dashboards</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">4</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Control Panel & FTP</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Free Support</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="packages__price packages__price--big">
+            <sup class="packages__price-currency">$</sup><span class="packages__price-value">40</span><sub class="packages__price-periodicity">/Mo</sub>
+          </p>
+          <button class="packages__btn">Select Plan</button>
+        </li>
+        <li class="packages_item packages_item--biggest">
+          <div class="packages__icon-wrapper">
+            <svg class="packages__stroke-biggest" width="56" height="56" viewBox="0 0 56 56">
+              <circle cx="50%" cy="50%" r="25" fill="none" stroke-dasharray="157.08" stroke-dashoffset="0" />
+            </svg>
+            <i class="packages__icon-biggest fa fa-diamond"></i>
+          </div>
+          <div class="table-container packages__table-container">
+            <table class="packages__table packages__table--biggest">
+              <caption class="packages__table-caption">
+                Biggest package
+              </caption>
+              <tbody>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Disk Space (GB)</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">250</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Subdomains</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">250</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Transfer (GB) </td>
+                  <td class="packages__table-cell packages__table-cell--quantity">250</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Data bases</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">6</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Dashboards</td>
+                  <td class="packages__table-cell packages__table-cell--quantity">6</td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Control Panel & FTP</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+                <tr class="packages__table-row">
+                  <td class="packages__table-cell packages__table-cell--description">Free Support</td>
+                  <td class="packages__table-cell packages__table-cell--quantity"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="packages__price packages__price--biggest">
+            <sup class="packages__price-currency">$</sup><span class="packages__price-value">70</span><sub class="packages__price-periodicity">/Mo</sub>
+          </p>
+          <button class="packages__btn">Select Plan</button>
+        </li>
+      </ul><!-- end of packages__list -->
+    </section><!-- end of packages-inner -->
+    <section class="team">
+      <div class="team-inner">
+        <div class="team__description">
+          <h2 class="team__head"><span class="team__head-black">About</span> <span class="team__head-semibold">Us</span></h2>
+          <p class="team__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat
+            eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at
+            augue libero. Fusce posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...</p>
+        </div>
+        <div class="team__members">
+          <ul class="team__members-list">
+            <li class="team__members-person">
+              <div class="team__member-photo-wrapper">
+                <img class="team__member-photo" src="./images/members/member-1.jpg" alt="Jonny Doe - Designer">
+              </div>
+              <h3 class="team__member-name">Jonny Doe</h3>
+              <p class="team__member-occupation">Designer</p>
+              <ul class="team__member-socials">
+                <li class="team__member-social-item">
+                  <a href="#" class="team__member-social-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-link"></i></a></li>
+              </ul>
+            </li>
+            <li class="team__members-person">
+              <div class="team__member-photo-wrapper">
+                <img class="team__member-photo" src="./images/members/member-2.jpg" alt="">
+              </div>
+              <h3 class="team__member-name">John Doe</h3>
+              <p class="team__member-occupation">Designer</p>
+              <ul class="team__member-socials">
+                <li class="team__member-social-item">
+                  <a href="#" class="team__member-social-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-link"></i></a></li>
+              </ul>
+            </li>
+            <li class="team__members-person">
+              <div class="team__member-photo-wrapper">
+                <img class="team__member-photo" src="./images/members/member-3.jpg" alt="">
+              </div>
+              <h3 class="team__member-name">Johnathan Doe</h3>
+              <p class="team__member-occupation">Designer</p>
+              <ul class="team__member-socials">
+                <li class="team__member-social-item">
+                  <a href="#" class="team__member-social-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="team__member-social-item"><a href="#" class="team__member-social-link"><i class="fa fa-link"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="team__comment">
+        <div class="team__comment-inner">
+          <blockquote class="comment">
+            <p class="comment__text">
+              “Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui
+              interdum dolor pulvinar vitae.”
+            </p>
+            <cite class="comment__author"><span class="comment__author-name">John Doe</span></cite>
+          </blockquote>
+          <blockquote class="comment">
+            <p class="comment__text">
+              “Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью, прямо
+              великий вопрос большой всемогущая переулка над ручеек ipsum.”
+            </p>
+            <cite class="comment__author"><span class="comment__author-name">Paval M</span></cite>
+          </blockquote>
+          <blockquote class="comment">
+            <p class="comment__text">
+              “Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью, прямо
+              великий вопрос большой всемогущая переулка над ручеек ipsum.”
+            </p>
+            <cite class="comment__author"><span class="comment__author-name">Johnathan Doe</span></cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="functions">
+      <div class="functions__inner">
+        <ul class="functions__list">
+          <li class="functions__item">
+            <a href="#" class="functions__link">
+              <div class="functions__icon functions__icon--fast">
+                <i class="fa fa-flash"></i>
+              </div>
+              <h3 class="functions__title">Fast servers</h3>
+              <p class="functions__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </a>
+          </li>
+          <li class="functions__item">
+            <a href="#" class="functions__link">
+              <div class="functions__icon functions__icon--cloud">
+                <i class="fa fa-cloud"></i>
+              </div>
+              <h3 class="functions__title">Cloud servers</h3>
+              <p class="functions__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </a>
+          </li>
+          <li class="functions__item">
+            <a href="#" class="functions__link">
+              <div class="functions__icon functions__icon--transfer">
+                <i class="fa fa-arrows"></i>
+              </div>
+              <h3 class="functions__title">Domain Transfer</h3>
+              <p class="functions__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </a>
+          </li>
+          <li class="functions__item">
+            <a href="#" class="functions__link">
+              <div class="functions__icon functions__icon--support">
+                <i class="fa fa-comments"></i>
+              </div>
+              <h3 class="functions__title">Live support</h3>
+              <p class="functions__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+            </a>
+          </li>
+        </ul>
+      </div><!-- end of functions__inner -->
+    </section><!-- end of functions -->
   </main>
   <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__top">
+        <div class="page-footer__logo">
+          <a href="index.html" title="GhostHost main page" class="page-footer__logo-link"><img class="page-footer__logo-pic"
+              src="./images/logos/footer-logo.png" alt="GhostHost logo" height="29" width="133"></a>
+        </div>
+        <nav class="page-footer__nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list__item footer-nav-list__item--active"><a class="footer-nav-list__link" href="#"
+                title="Home">home</a>
+            </li>
+            <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#" title="Hosting">about us</a></li>
+            <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#" title="Clients">blog</a></li>
+            <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#" title="Blog">policy</a></li>
+            <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#" title="Support">contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
+      <div class="page-footer__bottom">
+        <div class="copyright">
+          <div class="copyright__container">
+            <p class="copyright__description">Lorem ipsum dolor sit amet, consecteteeseuri adipiscing elit. Donec
+              mollis commodoeesene que, non commodo risus volutpat vel.</p>
+            <p class="copyright__person">Design by <a class="copyright__person-link">Mert Can Eyriyer</a>.</p>
+          </div>
+        </div>
+        <nav class="footer-menu">
+          <div class="footer-menu__container">
+            <ul class="footer-menu__column">
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#"> Support</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Account</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Product Catalog</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Shortcodes</a></li>
+            </ul>
+            <ul class="footer-menu__column">
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Site Map</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Whois Search</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Web Mail</a></li>
+              <li class="footer-menu__column-item"> <a class="footer-menu__column-item-link" href="#">Find Domain</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-contacts">
+          <div class="footer-contacts__container">
+            <p class="footer-phone"><a class="footer__phone-link" href="tel:0000-0000-0000"><i class="fa fa-phone"></i>0000-0000-0000</a></p>
+            <p class="footer__email"><a class="footer__email-link" href="mailto:informationteam@ghosthost.com"><i class="fa fa-envelope"></i>informationteam@ghosthost.com</a></p>
+            <p class="footer__address">Lorem Ipsum Street, Lorem Avenue, Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-
+  <script src="https://use.fontawesome.com/9e169d9b5e.js"></script> 
+  <link href="./temp/pixel-glass/styles.css" rel="stylesheet">
+  <script src="./temp/pixel-glass/script.js"></script>
+  <script src="./scripts/jquery-3.3.1.min.js"></script>
+  <script src="./scripts/slick.min.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>
