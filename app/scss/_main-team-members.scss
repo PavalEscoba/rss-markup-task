@@ -1,0 +1,151 @@
+.team {
+  margin-top: 10rem;
+
+}
+
+.team-inner {
+  max-width: 1220px;
+  margin: 0 auto 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  padding-top: 10.3rem;
+  padding-bottom: 7.9rem;
+  background-image: url('./../images/backgrounds/team-border-horizontal-bg.png');
+  background-size: 9px;
+  background-repeat: repeat-x;
+  background-position: top center;
+
+  @include tablet{
+    flex-direction: column;
+  }
+}
+
+.team__description {
+  max-width: 520px;
+  @include tablet{
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include phone{
+    width: 90%;
+  }
+}
+
+.team__head {
+  font-size: 3.5rem;
+  margin-bottom: 2.1rem;
+}
+
+.team__head-black {
+  font-family: "Lato Black", "Arial Black", sans-serif;
+  font-weight: 900;
+}
+
+.team__head-semibold {
+  font-family: "Lato Semibold", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.team__description-text {
+  font-family: "Lato Thin", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  padding-right: 11rem;
+  text-align: justify;
+  line-height: 1.5;
+
+  @include laptop{
+    padding-right: 5%;
+  }
+}
+
+.team__members {
+  width: 56%;
+  background-image: url('./../images/backgrounds/team-border-vertical-bg.png');
+  background-size: 2px;
+  background-repeat: repeat-y;
+  background-position: top left;
+  @include tablet{
+    background-image: none;
+    width: 100% ;
+
+  }
+}
+
+.team__members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-top: 1.3rem;
+  @include tablet{ 
+    padding: 2%;
+    padding-top: 3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include phone{
+    width: 90%;
+  }
+}
+
+.team__members-person {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mobile{
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+
+.team__member-photo-wrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 0 0 5px #e5e5e5;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.7rem;
+}
+
+.team__member-photo {
+  max-height: 110%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.team__member-name {
+  font-family: "Lato Semibold", Arial, sans-serif;
+  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
+  color: #303030;
+}
+
+.team__member-occupation {
+  font-family: "Lato Regular", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #8e8e8e;
+  margin-bottom: 1rem;
+}
+
+.team__member-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+}
+
+.team__member-social-link {
+  font-size: 1.5rem;
+  color: #bfbfbf;
+
+  &:hover i {
+    color: #1f89ba;
+  }
+}
